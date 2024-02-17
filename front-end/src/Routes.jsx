@@ -11,6 +11,8 @@ const ProductListingdesktop = React.lazy(
 const Dropdowndesktop = React.lazy(() => import("pages/Dropdowndesktop"));
 const Promotiondesktop = React.lazy(() => import("pages/Promotiondesktop"));
 const Landingdesktop = React.lazy(() => import("pages/Landingdesktop"));
+const Loginpage = React.lazy(() => import("pages/LoginPage"));
+
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
@@ -18,6 +20,7 @@ const ProjectRoutes = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/loginpage" element={<Loginpage />} />
           <Route path="/landingdesktop" element={<Landingdesktop />} />
           <Route path="/promotiondesktop" element={<Promotiondesktop />} />
           <Route path="/dropdowndesktop" element={<Dropdowndesktop />} />

@@ -1,9 +1,12 @@
 import tensorflow as tf
+from tensorflow import keras
 from tensorflow.keras.datasets import fashion_mnist
-from tensorflow.keras.models import Sequential
+from tensorflow.keras import models
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from tensorflow.keras.models import Sequential
 
 # Load the Fashion MNIST dataset
+fashion_mnist = keras.datasets.fashion_mnist
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 
 # Normalize pixel values to between 0 and 1

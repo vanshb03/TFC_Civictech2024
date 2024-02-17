@@ -17,11 +17,11 @@ x_test = x_test.reshape(x_test.shape[0], 28, 28, 1)
 model = Sequential([
     Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
     MaxPooling2D((2, 2)),
-    Conv2D(64, (3, 3), activation='relu'),
+    Conv2D(256, (3, 3), activation='relu'),
     MaxPooling2D((2, 2)),
-    Conv2D(64, (3, 3), activation='relu'),
+    Conv2D(256, (3, 3), activation='relu'),
     Flatten(),
-    Dense(64, activation='relu'),
+    Dense(256, activation='relu'),
     Dense(10, activation='softmax')  # 10 output classes
 ])
 
@@ -33,6 +33,9 @@ model.compile(optimizer='adam',
 # Train the model
 model.fit(x_train, y_train, epochs=5, validation_data=(x_test, y_test))
 
-# Evaluate the model
-test_loss, test_acc = model.evaluate(x_test, y_test)
-print(f'Test accuracy: {test_acc}')
+# # Evaluate the model
+# test_loss, test_acc = model.evaluate(x_test, y_test)
+# print(f'Test accuracy: {test_acc}')
+
+# Save the model
+model.save('fashion_model_v2.keras')

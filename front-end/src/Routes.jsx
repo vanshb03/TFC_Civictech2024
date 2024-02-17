@@ -13,9 +13,15 @@ const Promotiondesktop = React.lazy(() => import("pages/Promotiondesktop"));
 const Landingdesktop = React.lazy(() => import("pages/Landingdesktop"));
 const Loginpage = React.lazy(() => import("pages/LoginPage"));
 
+const Loading = () => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <img src="loading.gif" alt="Loading..." />
+  </div>
+);
+
 const ProjectRoutes = () => {
   return (
-    <React.Suspense fallback={<>Loading...</>}>
+    <React.Suspense fallback={<Loading />}>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

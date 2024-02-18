@@ -10,7 +10,7 @@ const NavbarItem = () => {
         {items.map((item) => (
           <div key={item} className="flex flex-col justify-start sm:px-5 px-[21px] w-auto">
             <div className="flex flex-col justify-start py-1.5 w-auto">
-              <Text className="text-[20px] text-black w-auto" size="txtStyreneAWebRegular13">
+              <Text className="text-[17px] text-black w-auto" size="txtStyreneAWebRegular13">
                 {item}
               </Text>
             </div>

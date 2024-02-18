@@ -1,0 +1,40 @@
+{
+    "clothes": [
+        {
+            "id": 1,
+            "uid" : 1,
+            "type": "T-shirt",
+            "price": 10
+        },
+        {
+            "id": 2,
+            "uid" : 1,
+            "type": "Jeans",
+            "price": 20
+        },
+        {
+            "id": 3,
+            "uid" : 2,
+            "type": "Socks",
+            "price": 5
+        },
+        {
+            "id": 4,
+            "uid" : 2,
+            "type": "sweater",
+            "price": 40
+        },
+        {
+            "id": 5,
+            "uid" : 2,
+            "type": "Jeans",
+            "price": 20
+        },
+        {
+            "id": 6,
+            "uid" : 2,
+            "type": "Socks",
+            "price": 5
+        }
+    ]
+}

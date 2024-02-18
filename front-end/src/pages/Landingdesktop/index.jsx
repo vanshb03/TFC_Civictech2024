@@ -4,6 +4,8 @@ import { Button, Img, Input, List, Text } from "components";
 import LandingDesktopProduct from "components/LandingDesktopProduct";
 import LandingDesktopProduct1 from "components/LandingDesktopProduct1";
 import NavbarItem from "components/NavbarItem";
+// import { clothesData }  from "../../../../db.json";
+import SearchEngine from "components/SearchEngine";
 
 const LandingdesktopPage = () => {
   const landingDesktopProductPropList = [
@@ -87,25 +89,7 @@ const LandingdesktopPage = () => {
           </ul>
         </header>
         
-        <div className="search-bar bg-white-A700 flex flex-col items-center justify-center outline outline-gray-300 p-5 w-full">
-          <div className="flex flex-row gap-5 items-center justify-center w-full">
-            <div className="flex flex-1 items-center justify-center w-full">
-              <Input
-                name="input"
-                placeholder="Search here! "
-                className="p-0 placeholder:text-gray-400 text-[13px] text-left w-full"
-                wrapClassName="w-full"
-                type="text"
-              ></Input>
-            </div>
-            <Button
-              className="cursor-pointer min-w-[116px] text-[15px] text-center"
-              color="black_900" 
-            >
-              Search
-            </Button>
-          </div>
-        </div>
+        <SearchEngine />
         
         <div
           className="bg-cover bg-no-repeat flex flex-col gap-5 h-[712px] md:h-auto items-start justify-end p-16 md:px-10 sm:px-5 w-full"

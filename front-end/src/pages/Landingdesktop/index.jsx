@@ -3,6 +3,7 @@ import React from "react";
 import { Button, Img, Input, List, Text } from "components";
 import LandingDesktopProduct from "components/LandingDesktopProduct";
 import LandingDesktopProduct1 from "components/LandingDesktopProduct1";
+import NavbarItem from "components/NavbarItem";
 
 
 const LandingdesktopPage = () => {
@@ -38,48 +39,7 @@ const LandingdesktopPage = () => {
               src="images/img_logo.svg"
               alt="logo"
             />
-            <div className="flex sm:flex-col flex-row sm:gap-5 items-center justify-start w-auto sm:w-full">
-              <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
-                <div className="flex flex-col items-center justify-center py-1.5 w-auto">
-                  <Text
-                    className="text-[13px] text-black-900 w-auto"
-                    size="txtStyreneAWebRegular13"
-                  >
-                    Shop
-                  </Text>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
-                <div className="flex flex-col items-center justify-center py-1.5 w-auto">
-                  <Text
-                    className="text-[13px] text-black-900 w-auto"
-                    size="txtStyreneAWebRegular13"
-                  >
-                    New Arrivals
-                  </Text>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
-                <div className="flex flex-col items-center justify-center py-1.5 w-auto">
-                  <Text
-                    className="text-[13px] text-black-900 w-auto"
-                    size="txtStyreneAWebRegular13"
-                  >
-                    Sales
-                  </Text>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
-                <div className="flex flex-col items-center justify-center py-1.5 w-auto">
-                  <Text
-                    className="text-[13px] text-black-900 w-auto"
-                    size="txtStyreneAWebRegular13"
-                  >
-                    Journel
-                  </Text>
-                </div>
-              </div>
-            </div>
+          <NavbarItem />
           </div>
           <ul className="flex flex-row gap-[18px] sm:hidden items-center justify-end w-auto common-row-list">
             <li>

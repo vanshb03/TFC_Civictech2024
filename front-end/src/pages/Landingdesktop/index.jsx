@@ -42,20 +42,6 @@ const LandingdesktopPage = () => {
           <NavbarItem />
           <ul className="flex flex-row gap-[18px] sm:hidden items-center justify-end w-auto common-row-list">
             <li>
-              {/* <a href="javascript:">
-                <Img
-                  className="h-3.5 w-3.5"
-                  src="images/img_magnifyingglass.svg"
-                  alt="magnifyingglass"
-                />
-              </a> */}
-            </li>
-            <li>
-              {/* <a href="javascript:" className="text-[13px] text-black-900">
-                <Text size="txtStyreneAWebRegular13">Stores</Text>
-              </a> */}
-            </li>
-            <li>
               <a href="javascript:">
                 <Img
                   className="h-3.5 w-3.5"

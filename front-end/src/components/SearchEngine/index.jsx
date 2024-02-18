@@ -3,7 +3,8 @@ import { Input, Button } from 'components'
 import clothesData from '../../../../db.json'
 
 const SearchEngine = () => {
-    const [searchTerm, setSearchTerm] = useState('');
+    const [searchTerm, setSearchTerm] = useState(''); 
+
     const [results, setResults] = useState([]);
     
     const handleSearchChange = (event) => {

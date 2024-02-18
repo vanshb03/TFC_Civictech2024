@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Input, Button } from 'components'
 import clothesData from '../../../../db.json'
 
@@ -10,14 +10,19 @@ const SearchEngine = () => {
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
     };
-
+    
     const handleSearch = () => {
         const searchResults = clothesData.clothes.filter(cloth =>
             cloth.type.toLowerCase().includes(searchTerm.toLowerCase())
         );
+        // Todo: We have to exclude the clothes from the user's own closet
         setResults(searchResults);
-        console.log(results);
     }
+
+    // This useEffect will run whenever `results` changes.
+    useEffect(() => {
+        console.log(results); // Now this will log the updated state
+    }, [results]); // Dependency array, useEffect runs when any of these values change.
 
 
     return (
@@ -45,7 +50,24 @@ const SearchEngine = () => {
             <div>
                 
             </div>
-            {/* <div>
+            {/* const NavbarItem = () => {
+                const items = ["Shop", "New Arrivals", "Sales", "Journal"]; // Corrected spelling of "Journal"
+            
+                return (
+                <div className="flex sm:flex-col flex-row sm:gap-5 items-left justify-start w-auto sm:w-full">
+                    {items.map((item) => (
+                    <div key={item} className="flex flex-col justify-start sm:px-5 px-[21px] w-auto">
+                        <div className="flex flex-col justify-start py-1.5 w-auto">
+                        <Text className="text-[17px] text-black w-auto" size="txtStyreneAWebRegular13">
+                            {item}
+                        </Text>
+                        </div>
+                    </div>
+                    ))}
+                </div>
+                );
+            }; */}
+            <div className="flex sm:flex-col flex-row sm:gap-5 items-left justify-start w-auto sm:w-full">
                 {results.length > 0 ? (
                   results.map(cloth => (
                       <div key={cloth.id}>
@@ -57,7 +79,7 @@ const SearchEngine = () => {
                 ) : (
                   <p>No results found</p>
                 )}
-            </div> */}
+            </div>
         </div>
   )
 }

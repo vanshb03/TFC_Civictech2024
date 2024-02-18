@@ -5,7 +5,6 @@ import LandingDesktopProduct from "components/LandingDesktopProduct";
 import LandingDesktopProduct1 from "components/LandingDesktopProduct1";
 import NavbarItem from "components/NavbarItem";
 
-
 const LandingdesktopPage = () => {
   const landingDesktopProductPropList = [
     {},
@@ -39,8 +38,8 @@ const LandingdesktopPage = () => {
               src="images/img_logo.svg"
               alt="logo"
             />
-          {/* <NavbarItem /> */}
           </div>
+          <NavbarItem />
           <ul className="flex flex-row gap-[18px] sm:hidden items-center justify-end w-auto common-row-list">
             <li>
               {/* <a href="javascript:">

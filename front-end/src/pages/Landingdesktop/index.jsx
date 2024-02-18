@@ -4,6 +4,7 @@ import { Button, Img, Input, List, Text } from "components";
 import LandingDesktopProduct from "components/LandingDesktopProduct";
 import LandingDesktopProduct1 from "components/LandingDesktopProduct1";
 
+
 const LandingdesktopPage = () => {
   const landingDesktopProductPropList = [
     {},
@@ -91,11 +92,6 @@ const LandingdesktopPage = () => {
               </a>
             </li>
             <li>
-              <a href="javascript:" className="text-[13px] text-black-900">
-                <Text size="txtStyreneAWebRegular13">Stores</Text>
-              </a>
-            </li>
-            <li>
               <a href="javascript:">
                 <Img
                   className="h-3.5 w-3.5"
@@ -116,7 +112,7 @@ const LandingdesktopPage = () => {
                     className="text-[13px] text-black-900 w-auto"
                     size="txtStyreneAWebRegular13"
                   >
-                    0
+                    2
                   </Text>
                 </div>
               </a>
@@ -146,8 +142,8 @@ const LandingdesktopPage = () => {
             <div className="flex flex-1 items-center justify-center w-full">
               <Input
                 name="input"
-                placeholder="Search"
-                className="p-0 placeholder:text-black-900 text-[13px] text-left w-full"
+                placeholder="Search here! "
+                className="p-0 placeholder:text-gray-400 text-[13px] text-left w-full"
                 wrapClassName="w-full"
                 type="text"
               ></Input>

@@ -24,13 +24,13 @@ const LandingdesktopPage = () => {
       <div className="bg-white-A700 flex flex-col font-styreneaweb items-start justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="bg-black-900 flex flex-col items-center justify-center px-[15px] py-3 w-full">
           <Text
-            className="text-[11px] text-center text-white-A700 w-auto"
+            className="text-[15px] text-center text-white-A700 w-auto"
             size="txtStyreneAWebRegular11"
           >
             Barter your old wears for different ones.{" "}
           </Text>
         </div>
-        <header className="bg-white-A700 flex md:flex-col md:gap-10 items-center justify-between outline outline-gray-300 md:px-5 px-8 py-[18px] w-full">
+        <header className="text-[14px] bg-white-A700 flex md:flex-col md:gap-3 items-center justify-between outline outline-gray-300 md:px-3 px-9 py-[20px] w-full">
           <div className="flex sm:flex-col flex-row gap-4 items-center justify-start w-auto">
             <Img
               className="h-5 w-[86px]"
@@ -41,7 +41,7 @@ const LandingdesktopPage = () => {
               <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
                 <div className="flex flex-col items-center justify-center py-1.5 w-auto">
                   <Text
-                    className="text-[13px] text-black-900 w-auto"
+                    className="text-[14px] text-black-900 w-auto text-l"
                     size="txtStyreneAWebRegular13"
                   >
                     Shop
@@ -51,7 +51,7 @@ const LandingdesktopPage = () => {
               <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
                 <div className="flex flex-col items-center justify-center py-1.5 w-auto">
                   <Text
-                    className="text-[13px] text-black-900 w-auto"
+                    className="text-[14px] text-black-800 w-auto text-l"
                     size="txtStyreneAWebRegular13"
                   >
                     New Arrivals
@@ -61,7 +61,7 @@ const LandingdesktopPage = () => {
               <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
                 <div className="flex flex-col items-center justify-center py-1.5 w-auto">
                   <Text
-                    className="text-[13px] text-black-900 w-auto"
+                    className="text-[14px] text-black-800 w-auto text-l"
                     size="txtStyreneAWebRegular13"
                   >
                     Sales
@@ -71,10 +71,10 @@ const LandingdesktopPage = () => {
               <div className="flex flex-col items-center justify-center sm:px-5 px-[21px] w-auto">
                 <div className="flex flex-col items-center justify-center py-1.5 w-auto">
                   <Text
-                    className="text-[13px] text-black-900 w-auto"
+                    className="text-[14px] text-black-800 w-auto text-l"
                     size="txtStyreneAWebRegular13"
                   >
-                    Journel
+                    Journal
                   </Text>
                 </div>
               </div>
@@ -82,18 +82,18 @@ const LandingdesktopPage = () => {
           </div>
           <ul className="flex flex-row gap-[18px] sm:hidden items-center justify-end w-auto common-row-list">
             <li>
-              <a href="javascript:">
+              {/* <a href="javascript:">
                 <Img
                   className="h-3.5 w-3.5"
                   src="images/img_magnifyingglass.svg"
                   alt="magnifyingglass"
                 />
-              </a>
+              </a> */}
             </li>
             <li>
-              <a href="javascript:" className="text-[13px] text-black-900">
+              {/* <a href="javascript:" className="text-[13px] text-black-900">
                 <Text size="txtStyreneAWebRegular13">Stores</Text>
-              </a>
+              </a> */}
             </li>
             <li>
               <a href="javascript:">
@@ -133,7 +133,7 @@ const LandingdesktopPage = () => {
                     className="text-[13px] text-black-900 w-auto"
                     size="txtStyreneAWebRegular13"
                   >
-                    2
+                    0
                   </Text>
                 </div>
               </a>

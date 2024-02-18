@@ -4,14 +4,20 @@ import clothesData from '../../../../db.json'
 
 const SearchEngine = () => {
     const [searchTerm, setSearchTerm] = useState('');
-
+    const [results, setResults] = useState([]);
+    
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
     };
 
-    // const filteredClothes = clothesData.clothes.filter(cloth =>
-    //     cloth.type.toLowerCase().includes(searchTerm.toLowerCase())
-    // );
+    const handleSearch = () => {
+        const searchResults = clothesData.clothes.filter(cloth =>
+            cloth.type.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setResults(searchResults);
+        console.log(results);
+    }
+
 
     return (
         <div className="search-bar bg-white-A700 flex flex-col items-center justify-center outline outline-gray-300 p-5 w-full">
@@ -30,35 +36,29 @@ const SearchEngine = () => {
             <Button
                 className="cursor-pointer min-w-[116px] text-[15px] text-center"
                 color="black_900" 
-                onClick={()=> console.log(searchTerm)}
+                onClick={handleSearch}
             >
                 Search
             </Button>
-        
             </div>
+            <div>
+                
+            </div>
+            {/* <div>
+                {results.length > 0 ? (
+                  results.map(cloth => (
+                      <div key={cloth.id}>
+                          <p>Owner ID: {cloth.uid}</p>
+                          <p>Type: {cloth.type}</p>
+                          <p>Price: ${cloth.price}</p>
+                      </div>
+                  ))
+                ) : (
+                  <p>No results found</p>
+                )}
+            </div> */}
         </div>
   )
 }
 
 export default SearchEngine
-
-// export default function SearchEngine() {
-//     const [message, setMessage] = useState('');
-
-//     const handleChange = (event) => {
-//       setMessage(event.target.value);
-//     };
-
-//     return (
-//       <div>
-//         <input
-//           type="text"
-//           id="message"
-//           name="message"
-//           onChange={handleChange}
-//         />
-//         <h2>Message: {message}</h2>
-//       </div>
-//     );
-//   }
-  

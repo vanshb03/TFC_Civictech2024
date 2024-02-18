@@ -140,6 +140,27 @@ const LandingdesktopPage = () => {
             </li>
           </ul>
         </header>
+        
+        <div className="search-bar bg-white-A700 flex flex-col items-center justify-center outline outline-gray-300 p-5 w-full">
+          <div className="flex flex-row gap-5 items-center justify-center w-full">
+            <div className="flex flex-1 items-center justify-center w-full">
+              <Input
+                name="input"
+                placeholder="Search"
+                className="p-0 placeholder:text-black-900 text-[13px] text-left w-full"
+                wrapClassName="w-full"
+                type="text"
+              ></Input>
+            </div>
+            <Button
+              className="cursor-pointer min-w-[116px] text-[15px] text-center"
+              color="black_900" 
+            >
+              Search
+            </Button>
+          </div>
+        </div>
+        
         <div
           className="bg-cover bg-no-repeat flex flex-col gap-5 h-[712px] md:h-auto items-start justify-end p-16 md:px-10 sm:px-5 w-full"
           style={{ backgroundImage: "url('images/img_content.png')" }}
@@ -159,6 +180,7 @@ const LandingdesktopPage = () => {
             Shop Now
           </Button>
         </div>
+        
         <div className="flex flex-col gap-12 items-start justify-start p-8 sm:px-5 w-full">
           <div className="flex flex-col items-center justify-center max-w-[1336px] mx-auto md:px-5 py-4 w-full">
             <Text
